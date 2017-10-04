@@ -1,0 +1,15 @@
+ .input span.icons {
+      display: block;
+      width: 17px;
+      height: 17px;
+      border: 1px solid #e1e1e1;
+      margin: 12px 14px 0 12px;
+     }
+     .input span.icons.active {
+      width: 23px;
+      height: 23px;
+      background: #fff url(../images/icon.png) -224px 0px no-repeat;
+      background-size: auto 23px;
+      margin: 12px 10px 0;
+      border: none;
+     }

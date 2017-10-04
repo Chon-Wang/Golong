@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>买买金钱包</title>
+  <meta name="title" content="买买金钱包" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+ 
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css">
+  <link href="css/ratchet.min.css" rel="stylesheet" /> 
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/ratchet.min.js"></script>
+  <script src="js/swiper-3.4.1.jquery.min.js"></script>  
+
+
+ 
+ <body>
+  <div class="mmj_centet"> 
+   <header class="bar bar-nav"> 
+    <button class="btn btn-link btn-nav pull-left"> <p class="tioimg"> </p> </button> 
+   
+    <h1 class="title">支付安全 
+      </h1> 
+   </header> 
+  </div> 
+  <section class="body" id="security">
+  <div class="info">
+  <p class="se">
+  <p class="t">买买金安全支付</p>
+  <p class="c">手机支付密码，加强您的资金账户安全</p>
+  </p>
+
+  </div>
+
+
+  </section>
+<ul class="table-view sol_ys sadwq"> 
+       <li class="table-view-cell media password" style=""> 
+           <a class="b_wdith">
+               <div class="img2">
+               </div>
+                 <div class="media-body dd_w"> 
+                  <p class="one_text">手机支付密码</p> 
+                  </div>
+                  <p class="justt"></p>
+              </a>
+          </li>
+          <!-- 这是折叠元素开始 -->
+          <ul class="folding_view" data-showme="false" style="display: none;">
+            <li class="table-view-cell">
+              <a href="deviceword.html" data-ignore="push">修改手机支付密码</a>
+            </li>
+            <li class="table-view-cell">
+              <a href="forgetpassword.html"  data-ignore="push">忘记手机支付密码</a>
+            </li>
+          </ul>
+          <!-- 这是折叠元素结束  -->
+           <li class="table-view-cell media safe" style=""> 
+           <a class="b_wdith" href="safetytips.html" data-ignore="push">
+               <div class="  tbim2">
+               </div>
+                 <div class="media-body dd_w"> 
+                  <p class="one_text">安全提示</p> 
+                  </div>
+                  <p class="justt"></p>
+              </a>
+          </li>
+           <li class="table-view-cell media" style=""> 
+           <a class="b_wdith" href="verification.html"  data-ignore="push">
+               <div class="  tbim3">
+               </div>
+                 <div class="media-body dd_w"> 
+                  <p class="one_text">实名认证</p> 
+                  </div>
+                  <p class="justt"></p>
+              </a>
+          </li>
+           <li class="table-view-cell media" style=""> 
+           <a class="b_wdith" href="grxx.html"  data-ignore="push">
+               <div class=" img2  tbim4">
+               </div>
+                 <div class="media-body dd_w"> 
+                  <p class="one_text">账户信息</p> 
+                  </div>
+                  <p class="justt"></p>
+              </a>
+          </li>
+          <li class="table-view-cell media" style=""> 
+           <a class="b_wdith" >
+               <div class=" img2  tbim5">
+               </div>
+                 <div class="media-body dd_w"> 
+                  <p class="one_text">常见问题</p> 
+                  </div>
+                  <p class="justt"></p>
+              </a>
+          </li>
+          
+
+   </ul> 
+ <p  class="banq">版权所有买买金钱包</p>
+ </body>
+
+ <script>
+
+  !function ($) {
+    var password = $(".password").eq(0);
+    var safe = $(".safe").eq(0);
+    var folding_view = $(".folding_view").eq(0);
+    password.on("click", function () {
+      var showme=folding_view.data("showme");
+      if (showme) {
+        folding_view.hide();
+        safe.css("border-top","1px solid #fff");
+      }else {
+        folding_view.show();
+        safe.css("border-top","1px solid #ddd");
+      }
+      folding_view.data("showme", !showme);
+    });
+  }(jQuery);
+
+  
+</script>
+
+
+</html>

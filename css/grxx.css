@@ -1,0 +1,173 @@
+body{
+	background-color: #fff;
+}
+.account-info-container {
+     overflow: hidden; 
+}
+.account-user-info {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    margin-bottom: .28rem;
+    margin-top: .28rem;
+    background-color: #fff;
+}
+.accout-user-active {
+    height: 2.26667rem;
+    position: relative;
+}
+.accout-user-active .user-name {
+    padding-left: 14px;
+    padding-top: 18px;
+    padding-bottom: .24rem;
+    font-size: 24px;
+    color: #333;
+    line-height: .4rem;
+}
+.accout-user-active .user-country {
+    padding-left: .4rem;
+    color: #999;
+    font-size: .34667rem;
+    line-height: .29333rem;
+}
+.line1 {
+    position: relative;
+    margin-left: 0rem;
+    height: 1px;
+    background-color: #eee;
+}
+.info-container {
+    background-color: #fff;
+}
+.user-info-item {
+    position: relative;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    background-color: #fff;
+    font-size: .42667rem;
+    color: #222;
+    margin-left: .4rem;
+    padding-right: .4rem;
+}
+.user-info-item {
+    position: relative;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    background-color: #fff;
+    font-size: .42667rem;
+    color: #222;
+    margin-left: .4rem;
+    padding-right: .4rem;
+}
+
+.user-info-item em {
+    display: inline-block;
+    width: 70%;
+    font-style: normal;
+    font-size: 14px;
+    color: #999;
+    position: absolute;
+    vertical-align: middle;
+    top: 50%;
+    line-height: .45333rem;
+    margin-top: -.2rem;
+    right: 14px;
+    text-align: right;
+}
+.user-info-item {
+    position: relative;
+    height: 1.33333rem;
+    line-height: 1.33333rem;
+    background-color: #fff;
+    font-size: .42667rem;
+    color: #222;
+    margin-left: .4rem;
+    padding-right: .4rem;
+}
+.marginb20 {
+    background-color: #f5f5f5;
+    height: .26667rem;
+}
+.user-info-item {
+    position: relative;
+   
+   margin-top: 20px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #222;
+    margin-left: 14px;
+    padding-right: 14px;
+}
+.identicard span:last-child {
+    float: right;
+    font-size: 14px;
+    color: #999;
+}
+  .getverify-code-btn{ display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color:#fc9f4a;
+    font-size: 12px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #fff;
+   
+    border-radius: 25px;} 
+    .yang_xs{
+        margin-top: 20px;
+        padding: 0 6px 0 10px;
+        min-width: 400px;
+    }
+    .fgd{
+        position: relative;
+    }
+    .dwq{
+        position: absolute;
+        top:4px;
+        right: 18px;
+        width: 50px;
+        background-color: #fc9f4a;
+        color:#fff;
+        border:1px solid #fc9f4a;
+    }
+
+    .input-group   input{
+        font-size: 12px;
+    }
+    .sdw_d{
+        float: right;
+        width: 50px;
+    }
+
+    .sds2{
+        position: absolute;
+        right: 8px;
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+    .group{
+        margin-top: 5px;
+        display: none;
+       position: absolute;
+       left:-100px; 
+     margin-bottom: 3px;
+      padding-bottom: 5px;
+      padding-left:50px;
+      border:1px solid #fc9f4a;
+      box-shadow: inset 0px 0px 6px #fc9f4a;
+    }
+      div,ul,li{margin:0;padding:0;}
+            ul{line-style:none;}
+
+            .select{position:relative;width:42%;min-width:130px;height:27px;border:1px solid #eee;cursor:pointer;padding-right: 5px;margin-top: 4px;padding-right: 20px;}
+            .select:after{content:"";position:absolute;top:50%;right:10px;margin-top:-2px;border-top:5px solid #666;border-right:5px solid transparent;border-left:5px solid transparent;}
+            .select .select_text{padding:0 20px 0 10px;height:36px;line-height:36px;}
+            .select_ul{display:none;position:absolute;top:34px;left:-1px;width:134px;min-width:134px;border:1px solid #D4D4D4;border-bottom-right-radius:3px;border-bottom-left-radius:3px;background:#fff;}
+            .select_ul li{line-height:36px;text-indent:10px;}
+            .select_ul li:hover{color:#fff;background:#6AA7EA;}
+            .select_ul li.cur{color:#fff;background:#195DA3;}

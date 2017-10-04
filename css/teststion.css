@@ -1,0 +1,23 @@
+.support-card {
+    margin: 9px 0;
+    font-size: 14px;
+    height: 26px;
+}
+.support-card img {
+    width: 26px;
+    height: 26px;
+}
+
+.support-card img, .support-card span {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+.support-card span {
+    margin: 5px 0 0 5px;
+}
+.support-card img, .support-card span {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}

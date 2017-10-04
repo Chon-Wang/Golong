@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="padding-bottom: 54px;">
+<head>
+  <title>余额明细</title>
+  <meta name="title" content="买买金钱包" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="css/ratchet.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/balance.css">
+</head> 
+<body style="overflow-y: scroll;">
+<div class="mmj_centet" style="min-height: 0;"> 
+  <header class="bar bar-nav" id="switcher"> 
+    <button class="btn btn-link btn-nav pull-left"> <p class="tioimg"> </p> </button> 
+    <h1 class="title">余额明细</h1>
+  </header> 
+</div> 
+
+<!--must content ul li,or shoupi-->
+<div id="iframe-wrap" style="height: 100%;overflow: visible;position: relative;top: 50px;">
+    <iframe id="iframe" src="detail_frame.html" frameborder="0" width="100%" height="514"></iframe>
+</div>
+<p class="banq">版权所有买买金钱包</p>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+function fixHeight() {
+  var headerHeight = $("#switcher").height();
+  $("#iframe").attr("height", $(window).height()-54+ "px");
+  // alert($(window).height()-54+ "px");
+}
+$(window).resize(function () {
+  fixHeight();
+}).resize();
+</script>
+</html>

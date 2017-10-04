@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>余额提现</title>
+  <meta name="title" content="买买金钱包" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+  <link href="css/ratchet.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/balance.css">
+  <link rel="stylesheet" type="text/css" href="css/recharge.css">
+
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/jquery.gDialog.css">
+
+   <script src="js/ratchet.min.js"></script>
+   <script src="js/jquery-1.11.1.min.js"></script>
+   <script src="js/jquery.gDialog.min.js"></script>
+
+ 
+ <body>
+  <div class="mmj_centet"> 
+   <header class="bar bar-nav"> 
+    <button class="btn btn-link btn-nav pull-left"> <p class="tioimg"> </p> </button> 
+   
+    <h1 class="title">余额提现 
+      </h1> 
+   </header> 
+  </div> 
+<div class="form" style="padding: 0 10px;">
+  <p class="form-tip">充百度钱包保障你的使用安全，请放心填写。</p>
+  <div class="input-group">
+  <div>
+    <div class="input list">
+    <span>提现到卡</span>
+    <span class="list-select poiw">建设银行 储蓄卡 ****8535</span>
+    <p class="boi aci"></p>
+    <ul class="uii">
+    <li class="disable" > 招商银行 储蓄卡 ****8502</li>
+    <li class="disable" > 招商银行 储蓄卡 ****3555</li>
+    <li class="disable" > 招商银行 储蓄卡 ****4636</li>
+    <li class="disable" > 招商银行 储蓄卡 ****5657</li>
+    <li class="disable" ><a href="http://www.jq22.com/myhome">绑定新银行卡</a></li>
+    </ul>
+    
+    <b class="clear"></b>
+    </div>
+    <div class="input">
+    <span>提现金额</span>
+    <div >
+    <input type="text" placeholder="本次可提现0.00元" style="border:none;"  >
+    </div>
+    <p class="boi"></p>
+ 
+   
+    
+    </div>
+  </div>
+  </div>
+
+</div>  
+
+<div id="buttn_on" class="sd">
+  确定
+</div>
+
+ <p  class="banq">版权所有买买金钱包</p>
+
+ </body>
+
+ <script type="text/javascript">
+ 
+
+ //下拉菜单赋值
+ $('.list').click(function () {
+  
+  $(".uii").toggle();
+  })
+
+  $('.uii li').click(function () {
+    var val = $(this).text();
+    $(".poiw").text(val);
+})
+
+  //弹出
+  $('.sd').click(function(){
+  $.gDialog.alert("萨达是大的撒萨达萨达", {
+    title: "",
+    animateIn: "bounceIn",
+    animateOut: "bounceOut"
+  });
+}); 
+
+ </script>
+
+</html>

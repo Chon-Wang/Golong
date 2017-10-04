@@ -1,0 +1,17 @@
+.empty-quan {
+    padding-top: 5rem;
+    text-align: center;
+    display: block;
+    color: #d5d5d5;
+}
+.empty-quan b {
+    display: block;
+    width: 40%;
+    height: 112px;
+    background: url(../images/bg_noquan_fe9a89c.png) no-repeat center;
+    background-size: 100%;
+    margin: 0 auto;
+}
+.empty-quan p{
+	color: #333;
+}

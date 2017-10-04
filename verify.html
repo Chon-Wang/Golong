@@ -1,0 +1,180 @@
+  <!DOCTYPE html>
+<html>
+ <head>
+  <title>验证</title>
+  <meta name="title" content="买买金钱包" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+  <link href="css/ratchet.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/balance.css">
+  <link rel="stylesheet" type="text/css" href="css/recharge.css">
+  <link rel="stylesheet" type="text/css" href="css/grxx.css">
+    <link href="css/changepd.css" rel="stylesheet">
+     <link href="css/verify.css" rel="stylesheet">
+
+
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+     <script src="js/jquery-validate.js" ></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+      <script type="text/javascript" src="js/getVerifyCode.js"></script>
+
+
+
+
+
+ 
+ <body>
+  <div class="mmj_centet"> 
+   <header class="bar bar-nav"> 
+    <button class="btn btn-link btn-nav pull-left"> <p class="tioimg"> </p> </button> 
+   
+    <h1 class="title">验证 
+      </h1> 
+   </header> 
+  </div> 
+
+<form class="yang_xs" >
+  <input type="text" placeholder="输入尾号7451银行卡完整卡号" style="width: 305px;">
+  
+</form>
+<form class="yang_xs" >
+
+<div style="width: 400px;">
+  <input type="text" placeholder="验证码" style="width: 200px;">
+  <div id="j_timekeeping" class="getverify-code-btn" style="margin-left: 10px;">获取验证码</div>
+  </div>
+  
+  
+</form> 
+<!-- 支付密码 -->
+
+      <form action="" method="post" name="payPassword" id="form_paypsw" class="wds_d" >
+      <div class="alieditContainer2 clearfix payPassword_container ggewr" data-busy="0"  style="top:305px;">
+     
+        <div class="i-block" data-error="i_error" style="float: left;">
+          <div class="i-block six-password" >
+            <input id="payPassword_rsainput" class="i-text sixDigitPassword payPassword_rsainput" type="password" autocomplete="off" required="required" value="" name="payPassword_rsainput" data-role="sixDigitPassword" tabindex="" maxlength="6" minlength="6" aria-required="true" style="width: 150%;">
+            <div tabindex="0" class="sixDigitPassword-box" style="width: 224px;height: 40px;">
+              <i style="width: 37px; border-color: transparent;" class=""><b style="visibility: hidden;"></b></i>
+              <i style="width: 37px;"><b style="visibility: hidden;"></b></i>
+              <i style="width: 37px;"><b style="visibility: hidden;"></b></i>
+              <i style="width: 37px;"><b style="visibility: hidden;"></b></i>
+              <i style="width: 37px;"><b style="visibility: hidden;"></b></i>
+              <i style="width: 37px;"><b style="visibility: hidden;"></b></i>
+              <span style="width: 37px; height:40px;left: 0px; visibility: hidden;" class="cardwrap" data-role="cardwrap"></span>
+              </div>
+            </div>
+             
+          </div>
+          <div class="icon_d" style="float: left;margin-top: 14px;">
+          <img class="showme" id="showme" src="images/1.png">
+        </div>
+         
+      </div>
+       <label for="i_payPassword" class="i-block" style="float: left;margin-left: 2px;">输入新密码</label>
+    </form>
+
+
+<a href="" data-ignore="push" style="color: #fff">
+<div id="buttn_on">
+  确定
+</div>
+</a>
+ <p  class="banq">版权所有买买金钱包</p>
+
+ </body>
+ 
+
+<script type="text/javascript">
+
+  var payPassword = $(".payPassword_container");
+  var payPassword2 = $(".payPassword_container2");
+  shitFun(payPassword, "input[name='payPassword_rsainput']");
+  shitFun(payPassword2, "input[name='payPassword_rsainput2']");
+
+  function shitFun(payPassword, _this_input){
+    var _this = payPassword.find('i'),
+      _flag=false,k=0, j=0,
+      _payPassword_rsainput = payPassword.find(".payPassword_rsainput").eq(0),
+      _cardwrap = payPassword.find(".cardwrap").eq(0),
+      _showme=payPassword.find(".showme").eq(0);
+    //点击隐藏的input密码框,在6个显示的密码框的第一个框显示光标
+    payPassword.on('focus',_this_input,function(){
+      var _this = payPassword.find('i');
+      if(payPassword.attr('data-busy') === '0'){ 
+        //在第一个密码框中添加光标样式
+         _this.eq(k).addClass("active");
+         _cardwrap.css('visibility','visible');
+         payPassword.attr('data-busy','1');
+      }
+      
+    }); 
+    //change时去除输入框的高亮，用户再次输入密码时需再次点击
+    payPassword.on('change',_this_input,function(){
+      _cardwrap.css('visibility','hidden');
+      _this.eq(k).removeClass("active");
+      payPassword.attr('data-busy','0');
+    }).on('blur',_this_input,function(){
+      _cardwrap.css('visibility','hidden');
+      _this.eq(k).removeClass("active");          
+      payPassword.attr('data-busy','0');
+      
+    });
+    
+    //使用keyup事件，绑定键盘上的数字按键和backspace按键
+    payPassword.on('keyup',_this_input,function(e){
+      var  e = (e) ? e : window.event;
+      //键盘上的数字键按下才可以输入
+      if(e.keyCode){
+        settingDefaultFun(_flag);
+      }else{
+        //输入其他字符，直接清空
+        var _val = this.value;
+        this.value = _val.replace(/\D/g,'');
+      }
+    });
+
+    _showme.on("tap", function () {
+      if (!_flag) {
+        $(this).attr("src", "images/2.png");
+        var values = _payPassword_rsainput.val();
+        for(var i=0;i<values.length;i++){
+          _this.eq(i).html(values[i]);
+        }
+      }else{
+        $(this).attr("src", "images/1.png");
+        for(var i=0;i<_this.length;i++){
+          _this.eq(i).html("<b style=\"visibility: hidden;\"></b>");
+          settingDefaultFun(false);
+        }
+      }
+      _flag = !_flag;
+    });
+    function settingDefaultFun(_flag) {
+      var valuse = _payPassword_rsainput.val();
+      k = _payPassword_rsainput.val().length;//输入框里面的密码长度
+      l = _this.size();//6
+      for(;l--;){
+        l===k?_this.eq(l).addClass("active"):
+          _this.eq(l).removeClass("active");
+        _flag?_this.eq(l).html(valuse[l]):
+          _this.eq(l).find('b').css('visibility', l < k ? 'visible' : 'hidden');
+        _cardwrap.css('left',(k===6?5:k)*37+'px');
+      }
+    }
+  }
+
+  
+  
+  $("#letsgo").on("click", function () {
+    // 获取到输入的值
+    var result1 = $("#payPassword_rsainput").val();
+    var result2 = $("#payPassword_rsainput2").val();
+    alert(result1+","+result2);
+  })
+</script>
+</html>

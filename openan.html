@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>个人信息</title>
+  <meta name="title" content="买买金钱包" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+  <link href="css/ratchet.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/balance.css">
+  <link rel="stylesheet" type="text/css" href="css/recharge.css">
+  <link rel="stylesheet" href="css/j-select.css" />
+  <link rel="stylesheet" type="text/css" href="css/grxx.css">
+
+
+     <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" />
+
+
+
+
+   <script src="js/ratchet.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-weui.min.js"></script>
+
+  <script type="text/javascript" src="js/city-picker.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/getVerifyCode.js"></script>
+  <script src="js/checkbox.min.js"></script>
+         <script type="text/javascript" src="js/jquery.select.js"></script>
+
+ <body>
+  <div class="mmj_centet"> 
+   <header class="bar bar-nav"> 
+    <button class="btn btn-link btn-nav pull-left"> <p class="tioimg"> </p> </button> 
+   
+    <h1 class="title">个人信息 
+      </h1> 
+   </header> 
+  </div> 
+  <div class="account-info-container" id="user-info">
+  <div class="account-user-info">
+  
+  
+  </div>
+<form class="input-group ">
+
+  <div class="input-row fgd">
+   <div class="btn  dwq">修改</div>
+    <label>姓名</label>
+    <input type="text" placeholder="王冲" disabled="disabled"  class="input_rwq">
+
+
+  </div>
+
+  <div class="input-row fgd" >
+  <div class="btn  dwq  dw3d">修改</div>
+
+    <label>手机</label>
+    <input type="email" placeholder="13655377451" disabled="disabled" class="input_rwq">
+  </div>
+  <div>
+  <div class="group" style="position: relative;min-width: 210px;"> 
+         <label for="pass" class="label"  style="font-size: 14px;padding-left: 15px;"></label> 
+         <input id="pass" type="text" class="input" data-type="password" style="width: 50%;border:none;" / > 
+       <div id="j_timekeeping" class="getverify-code-btn  sds2">获取验证码</div>
+        </div> 
+
+  </div>
+  <div class="input-row fgd">
+  <div class="btn  dwq" style="">修改</div>
+    <label>身份证</label>
+    <input type="text" placeholder="37088219950801321X"   disabled="disabled" class="input_rwq">
+  </div>
+   <div class="input-row fgd">
+   <div class="btn  dwq" style="">修改</div>
+    <label style="font-size: 14px;width: 34%;">证件有效期</label>
+  <!--   <input type="text" placeholder="2017.02.04" style="" disabled="disabled"> -->
+     <select class="select" name="state" data-value="0" >
+            <option value ="0">请选择</option>
+            <option value ="1" >广州市</option>
+            <option value ="2" >深圳市</option>
+            <option value ="3" >湛江市</option>
+            <option value ="4" >北京市</option>
+        </select>
+  </div>
+
+
+    <div class="input-row fgd">
+  <div class="btn dwq pdw">修改</div>
+    <label>地区</label>
+      <input type='text' class="input" id='city-picker' placeholder='请选择省市区县' / style="display: none;">
+      <input type='text' class="input"  disabled="disabled" placeholder='山东济南' /  id="d_q" style="width: 100px;float: left;">
+  </div>
+</form>
+
+
+<div id="buttn_on">
+  确认
+</div>
+ <p  class="banq">版权所有买买金钱包</p>
+
+ </body>
+
+ <script>
+
+
+$('.dw3d').click(function () {
+
+  $('.group').animate({'left':'0.5px'},'slow','easeOutCirc')
+  $('.group').show();
+
+})
+
+
+
+ $('.pdw').click(function () {
+
+   $('#d_q').hide();
+   $('#city-picker').show();
+
+ })
+/*$(".dx_hr").click(function () {
+  window.location.href="site.html"
+})
+$(".zy_hr").click(function () {
+  window.location.href="jobs.html"
+})
+*/
+/*$('.input-group .dwq').click(function () {
+alert(1)
+ var ch = $(this).index()
+ var wy = $('input').attr('disabled',true)
+
+$('input').eq(ch).removeAttr('disabled')
+ 
+})
+*/
+$(' .dwq').click(function () {
+/*  alert(1)*/
+ var ch = $(this).index(".dwq")
+
+ console.log(ch)
+ /*var wy = $('input').attr('disabled',true)*/
+$('.input_rwq').eq(ch).removeAttr('disabled')
+
+})
+
+
+ $("#city-picker").cityPicker({
+        title: "选择省市区/县",
+        onChange: function (picker, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+   
+
+</script>
+</html>

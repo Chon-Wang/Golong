@@ -1,0 +1,39 @@
+body{
+  font-family: "Microsoft YaHei" ! important;
+  }.bar-nav{
+	background:#fc9f4a;
+}
+.tioimg{
+	float: left;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(../images/qb_back.png);
+    width: 45px;
+    height: 53px;
+    background-repeat: no-repeat;
+    background-size: 13px auto;
+    background-position: 9px 50%;
+   }
+   .solo_w{
+   min-height:100px;
+   padding-top: 20px;
+   }
+   .mmj_centet{
+    min-height:55px;
+
+}
+h2{
+	color: #e94643;
+}
+.conten{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.conten p{
+  color:#333;
+}
+.conten span{
+  color:#666;
+  display:block;
+}

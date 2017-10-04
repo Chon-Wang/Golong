@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>确认转账信息</title>
+  <meta name="title" content="买买金钱包" />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+  <link href="css/ratchet.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/balance.css">
+  <link rel="stylesheet" type="text/css" href="css/recharge.css">
+
+   <link rel="stylesheet" type="text/css" href="css/accounts.css">
+   <link rel="stylesheet" type="text/css" href="css/wxzf.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+
+
+
+
+
+ 
+ <body>
+  <div class="mmj_centet"> 
+   <header class="bar bar-nav"> 
+    <button class="btn btn-link btn-nav pull-left"> <p class="tioimg"> </p> </button> 
+   
+    <h1 class="title">确认转账信息 
+      </h1> 
+   </header> 
+</div> 
+<div class="fer_center">
+<p class="fer_p">*冲</p>
+<div class="form" style="padding: 20px 10px;">
+ 
+  <div class="input-group">
+  <div>
+   
+    <div class="input">
+    <span style="text-align: center;">¥</span>
+    <div >
+    <input type="text" placeholder="转账金额" style="border:none;padding-left: 70px;"  >
+    </div>
+    <p class="boi"></p>
+ 
+   
+    
+    </div>
+  </div>
+  </div>
+
+</div>  
+</div>
+<!--浮动层-->
+
+<div class="ftc_wzsf">
+
+  <div class="srzfmm_box">
+  <div class="sdw_d" style="float: right;"><img src="images/xx_03.jpg"></div>
+    <ul class="mm_box">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="numb_box">
+    <div class="xiaq_tb"> <img src="images/jftc_14.jpg" height="10"> </div>
+    <ul class="nub_ggg">
+      <li><a href="javascript:void(0);">1</a></li>
+      <li><a href="javascript:void(0);" class="zj_x">2</a></li>
+      <li><a href="javascript:void(0);">3</a></li>
+      <li><a href="javascript:void(0);">4</a></li>
+      <li><a href="javascript:void(0);" class="zj_x">5</a></li>
+      <li><a href="javascript:void(0);">6</a></li>
+      <li><a href="javascript:void(0);">7</a></li>
+      <li><a href="javascript:void(0);" class="zj_x">8</a></li>
+      <li><a href="javascript:void(0);">9</a></li>
+      <li><span></span></li>
+      <li><a href="javascript:void(0);" class="zj_x">0</a></li>
+      <li><span  class="del" > <img src="images/jftc_18.jpg"   ></span></li>
+    </ul>
+  </div>
+  <div class="hbbj"></div>
+</div>
+
+<a href="javascript:void(0);" class="ljzf_but all_w">
+<div id="buttn_on">
+  确认转账
+</div>
+</a>
+ <p  class="banq">版权所有买买金钱包</p>
+
+ </body>
+<script type="text/javascript">
+$(function(){
+
+
+  //出现浮动层
+  $(".ljzf_but").click(function(){
+    $(".ftc_wzsf").show();
+    });
+  //关闭浮动
+  $(".close").click(function(){
+    $(".ftc_wzsf").hide();
+    });
+    //数字显示隐藏
+    $(".xiaq_tb").click(function(){
+    $(".numb_box").slideUp(500);
+    });
+    $(".mm_box").click(function(){
+    $(".numb_box").slideDown(500);
+    });
+    //----
+    var i = 0;
+  var mmdata = "";
+    $(".nub_ggg li a").click(function(){
+      i++
+    $(".mm_box li").eq(i-1).addClass("mmdd");
+    mmdata += String($(this).text());
+    if (i>=6){
+     setTimeout(function(){
+      alert(mmdata);
+      //location.href="cg.html"; 
+          },500);
+          //window.document.location="cg.html"
+    }
+    });
+    
+    $(".nub_ggg li .del").click(function(){
+      
+      if(i>0){
+        i--
+        $(".mm_box li").eq(i).removeClass("mmdd");
+    mmdata = removeLastOne(mmdata);
+        i==0;
+        }
+      //alert(i);
+      
+      
+       
+    });
+    $('.sdw_d').click(function () {
+      $(".ftc_wzsf").hide();
+    })
+    
+  function removeLastOne(str){
+    return str.substring(0, str.length - 1);
+  }
+    
+   
+});
+</script>
+
+</html>

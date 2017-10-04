@@ -1,0 +1,56 @@
+#security .info {
+    padding-top: 14px;
+    height: 200px;
+    color: #555;
+    text-align: center;
+    border-bottom: 1px solid #dfdfdf;
+}
+#security .info p {
+    padding-bottom: 6px;
+}
+#security .se {
+    background-image: url(../images/se.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-size: 100px auto;
+}
+#security .info p.t {
+    font-size: 25px;
+    padding-top: 10px;
+}
+#security .info p {
+    padding-bottom: 6px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+#security .info p.c {
+    font-size: 14px;
+}
+.sadwq .img2 {
+    background-image: url(../images/pp.png);
+}
+.sadwq .tbim2{
+	 background-image: url(../images/s_tip.png);
+	 width: 26px;
+	 height: 30px;
+	 margin-top: 1px;
+}
+
+.sadwq .tbim3{
+	background-image: url(../images/auth_icon.png);
+	    margin-top: 7px;
+}
+.sadwq .tbim4{
+	background-image: url(../images/info.png);
+	margin-top: 3px;
+	height: 30px;
+}
+.sadwq .tbim5{
+    background-image: url(../images/s_problem.png);
+    margin-top: 3px;
+    height: 30px;
+}

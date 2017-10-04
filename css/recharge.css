@@ -1,0 +1,132 @@
+.form-tip{
+	    margin: 16px 0 9px;
+    font-size: 14px;
+}
+.input-group{
+	background-color: #fff;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.input-group>div {
+    padding: 0 6px 0 10px;
+}
+.input-group .input:last-child {
+    border-bottom: none;
+}
+.input-group .input {
+    border: none;
+    padding: 0;
+   border-bottom: 1px dashed #d9d9d9;
+}
+.input {
+
+    height: 43px;
+    border: 1px solid #ddd;
+    line-height: 43px;
+    background-color: #fff;
+    padding-left: 10px;
+    position: relative;
+
+}
+.input span:first-child {
+    width: 64px;
+}
+.input span {
+    float: left;
+    font-size: 15px;
+    height: 43px;
+}
+.input div {
+    height: 40px;
+    font-size: 15px;
+    position: absolute;
+    left: 64px;
+    right: 30px;
+}
+.input .clear {
+    display: none;
+}
+.input b {
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
+    color: #fff;
+    -webkit-user-select: none;
+    width: 43px;
+    height: 44px;
+    top: 0;
+}
+#buttn_on{
+    width:90%;
+    height: 40px;
+    background: #fcb419;
+    border-radius: 5px;
+    text-align: center;
+    color:#fff;
+    line-height: 40px;
+    margin:20px auto;
+
+}
+#buttn_on:hover{
+    background: #f3ce7f;
+
+}
+.list-select {
+    padding-left: 10px;
+}
+.input .uii {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ddd;
+    left: 0;
+    top: 44px;
+    z-index: 20;
+    background-color: #fff;
+    border-top: none;
+    display: none;
+}
+.uii  li.disable {
+    color: #333;
+}
+.uii  li {
+    height: 43px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.boi {
+    content: '';
+    position: absolute;
+    height: 11px;
+    top: 16px;
+    right: 6px;
+    background-image: url(../images/icon5.png);
+    background-repeat: no-repeat;
+    background-position: -281px 0;
+    display: block;
+    width: 7px;
+    background-size: 300px auto;
+    transition: 250ms;
+    float: right;
+}
+.my_col{
+    text-align: center;margin: 54px 0 40px;color: #555;
+}
+.my_col img{
+    width: 104px;height: 123px;margin: auto auto 40px;
+}
+
+.my_col p{
+    margin-top: 0;margin-bottom: 10px;font-size: 14px;color: #777;
+}
+.banq{
+    position: static;
+   color:#ccc;
+   margin:0 auto;
+   width: 130px;
+}
+
+

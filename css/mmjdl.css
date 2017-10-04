@@ -1,0 +1,238 @@
+    body{
+        font-family: "Microsoft YaHei"
+
+    }
+    .title{
+        background: #fc9f4a;
+        color: #fff;
+        min-height: 1px;
+    }
+    .le_im{
+        margin-top:10px;
+    }
+    .le_gi{
+        padding-right: 5px;
+    }
+    .qiee{
+        width: 170px;
+        height: 95px;
+        
+        margin:18px auto;
+    }
+    .qiee a{
+        float: left;
+        font-size: 14px;
+
+    }
+    .qiee_img{
+            width: 170px;
+            height: 45px;
+        
+    float: left;
+    }
+    .qiee_img img{
+        margin:0 auto;
+
+    }
+.mmj_centet{
+    min-height:175px;
+
+}
+.t_img{
+    float: left;
+    padding-top: 5px;
+}
+.dd_w{
+    float: left;
+    margin-left:10px;
+}
+.one_text{
+    font-size: 14px;
+    color: #333;
+}
+.two_text{
+    font-size: 12px;
+}
+.t_post{
+    float: right;
+    margin-top:10px;
+
+}
+.b_wdith{
+    min-width: 460px;
+}
+#yours{
+    width: 100%;
+    height: 47px;
+    
+}
+.leng_d{
+    
+    float: left;
+    height: 53px;
+    width: 50%;
+}
+.leng_text{
+    text-align: center;
+
+
+}
+.mane_r{
+    margin-bottom: 2px;
+    padding-top: 5px;
+}
+.mane_l{
+    
+}
+.sol_ys{
+    margin-top:10px;
+}
+.dgh_d{
+    margin-bottom: 0;
+    padding-top: 8px;
+}
+.bar{
+    font-size:14px;
+}
+.center{
+    height: 45px;
+}
+#buttn_on{
+    width:90%;
+    height: 40px;
+    background: #fcb419;
+    border-radius: 5px;
+    text-align: center;
+    color:#fff;
+    line-height: 40px;
+    margin:0 auto;
+
+}
+#buttn_on:hover{
+    background: #f3ce7f;
+
+}
+#puck{
+    width: 100%;
+    height: auto;
+    min-height: 78px;
+   
+    margin:10px auto;
+}
+.left-l{
+    float: left;
+    min-height: 62px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.left-l img{
+    float: left;
+    margin-top: 8px;
+}
+.left_te{
+    float: left;
+    margin-left: 20px;
+}
+.text-y{
+    font-size: 16px;
+    font-weight: bold;
+    color:#333;
+
+}
+.rigtht-l{
+    float: right;
+}
+.rigtht-l p{
+    text-align: center;
+    line-height: 75px;
+    padding-right:10px;
+    height: 29px;
+
+}
+.rigtht-l span{
+    display: block;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-left: 85px;
+    color:#43a9dc;
+}
+.add{
+    padding-left:15px;
+}
+.add img{
+    float: left;
+
+}
+.add p{
+    float: left;
+    margin-left: 10px;
+}
+.dtgger_s{
+    width: 100%;
+    height: 78px;
+    background: #fff;
+}
+.color{
+    background: #aaa;
+}
+.form-control{
+    float: left;
+}
+.f_s{
+    float: left;
+    width: 100%;
+   
+}
+.fd{
+    float: left;
+    width: 80%;
+
+}
+.form_td{
+    float: left;
+}
+.password{
+
+width: 100%;
+height: 100%;
+overflow: hidden;
+margin:0 auto;
+
+
+
+}
+.icon_d{
+    float: right;
+    margin-top: -34px;
+    margin-left: 10px;
+}
+.input-group{
+    padding-top: 10px;
+}
+#letsgo{
+    opacity: 0;
+    float: left;
+}
+.cah_g{
+    float: left;
+    width:90%;
+    height: 40px;
+    background: #fcb419;
+    border-radius: 5px;
+    text-align: center;
+    color:#fff;
+    line-height: 40px;
+   margin-left: 22px;
+}
+.cah_g:hover{
+    background: #f3ce7f;
+
+}
+.ggewr{
+
+}
+#form_paypsw{
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+}
